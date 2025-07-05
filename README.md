@@ -20,7 +20,7 @@ Ensure you have the following dependencies installed:
 
 To install the required dependencies, run:
 ```
-pip install pillow fpdf lorem
+pip install -r requirements.txt
 ```
 
 **Usage Instructions**

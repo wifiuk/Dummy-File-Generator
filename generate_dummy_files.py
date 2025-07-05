@@ -178,4 +178,5 @@ def create_dummy_files(num_files=NUM_FILES, output_dir=OUTPUT_DIR):
     if ENABLE_LOGGING:
         logging.info(f"{num_files} dummy files created in '{output_dir}' directory.")
 
-create_dummy_files()
+if __name__ == "__main__":
+    create_dummy_files()

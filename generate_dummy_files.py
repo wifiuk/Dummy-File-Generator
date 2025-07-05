@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 from PIL import Image
 from fpdf import FPDF
 import zipfile
-import io
 import csv
 import json
 import xml.etree.ElementTree as ET

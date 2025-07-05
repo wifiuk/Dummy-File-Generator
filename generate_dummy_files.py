@@ -169,7 +169,9 @@ def create_dummy_files(num_files=NUM_FILES, output_dir=OUTPUT_DIR):
     for i in range(num_zip_files):
         zip_name = f"{generate_random_english_word()}_zip_{i}.zip"
         zip_path = os.path.join(output_dir, zip_name)
-        included_files = random.sample(all_files, random.randint(1, 10))
+        sample_size = random.randint(1, 10)
+        sample_size = min(sample_size, len(all_files))
+        included_files = random.sample(all_files, sample_size)
         create_dummy_zip(zip_path, included_files)
         all_files.append(zip_path)
         file_date = one_year_ago + timedelta(days=random.randint(0, 365))
